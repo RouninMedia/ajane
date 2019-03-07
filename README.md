@@ -1,7 +1,7 @@
 # ajane
 AJANE (Asynchronous Javascript and Nothing Else)
 
-Ajax (now superseded by fetch) conventionally retrieved **data** from the server, asynchronously.
+Ajax (now superseded by fetch) conventionally retrieves **data** from the server, asynchronously.
 
 But what if you simply want to load and execute **javascript**, asynchronously?
 
@@ -9,7 +9,8 @@ AJANE (Asynchronous Javascript and Nothing Else) is a function which, straightfo
   
 ## Example:
 
-`function ajane(scriptName) {
+```
+function ajane(scriptName) {
 
     var allScripts = document.getElementsByTagName('script');
     var lastScript = scripts[(scripts.length - 1)];
@@ -20,4 +21,5 @@ AJANE (Asynchronous Javascript and Nothing Else) is a function which, straightfo
     newScript.setAttribute('src', '/.assets/design/scripts/' + scriptName + '/scriptName.js');
     
     document.body.insertBefore(newScript, lastScript.nextElementSibling);
-}`
+}
+```
