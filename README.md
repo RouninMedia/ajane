@@ -5,7 +5,9 @@ AJANE (Asynchronous Javascript and Nothing Else)
 
 But what if you simply want to load and execute **javascript**, asynchronously?
 
-AJANE (Asynchronous Javascript and Nothing Else) is a function which, straightforwardly, enables a new `<script>` element (which wasn't present when the document was initially loaded) to be added to the end of the DOM, whereupon the browser will automatically load and execute it.
+AJANE (Asynchronous Javascript and Nothing Else) is a function which, straightforwardly, enables a new `<script>` element (which wasn't present when the document was initially loaded) to be added to the end of the DOM.
+
+After the element is added, the browser will automatically load and execute it.
   
 ## Example:
 
