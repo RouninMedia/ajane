@@ -13,7 +13,7 @@ AJANE (Asynchronous Javascript and Nothing Else) is a function which, straightfo
 function ajane(scriptName) {
 
     let allScripts = document.getElementsByTagName('script');
-    let lastScript = scripts[(scripts.length - 1)];
+    let lastScript = allScripts[(allScripts.length - 1)];
     
     let newScript = document.createElement('script');
     newScript.classList.add(scriptName);
