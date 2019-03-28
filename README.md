@@ -20,7 +20,7 @@ function ajane(scriptName) {
     let newScript = document.createElement('script');
     newScript.classList.add(scriptName);
     newScript.classList.add('ajane');
-    newScript.setAttribute('src', '/.assets/design/scripts/' + scriptName + '/scriptName.js');
+    newScript.setAttribute('src', '/.assets/design/scripts/' + scriptName + '/' + scriptName + '.js');
     
     document.body.insertBefore(newScript, lastScript.nextElementSibling);
 }
