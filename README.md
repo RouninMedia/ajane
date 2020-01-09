@@ -13,15 +13,11 @@ After the new `<script>` element is added, the browser will automatically load a
 
 ```
 function ajane(scriptName) {
-
-    let allScripts = document.getElementsByTagName('script');
-    let lastScript = allScripts[(allScripts.length - 1)];
     
     let newScript = document.createElement('script');
     newScript.classList.add(scriptName);
-    newScript.classList.add('ajane');
-    newScript.setAttribute('src', '/.assets/design/scripts/' + scriptName + '/' + scriptName + '.js');
+    newScript.setAttribute('src', `/.assets/design/scripts/${scriptName}/${scriptName}.js`);
     
-    document.body.insertBefore(newScript, lastScript.nextElementSibling);
+    document.body.appendChild(newScript);
 }
 ```
